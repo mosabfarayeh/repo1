@@ -42,10 +42,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Scaffold(
       body: Column(
         children: [
-          const SizedBox(height: 50),
-          Image(
-            image: AssetImage('images/sp.png'),
-          ),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
@@ -59,6 +55,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Image(
+                        image: AssetImage('images/speed.png'),
+                      ),
+                      const SizedBox(height: 20),
                       Text(
                         onboardingPages[index]['title'],
                         style: const TextStyle(
