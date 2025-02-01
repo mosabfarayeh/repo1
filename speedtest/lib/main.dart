@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:speedtest/screens/onboarding_screen.dart';
+import 'package:speedtest/screens/login_screen.dart';
+import 'package:speedtest/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());

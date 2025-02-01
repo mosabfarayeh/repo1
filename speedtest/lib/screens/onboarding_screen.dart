@@ -42,6 +42,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Scaffold(
       body: Column(
         children: [
+          const SizedBox(height: 50),
+          Image(
+            image: AssetImage('images/sp.png'),
+          ),
           Expanded(
             child: PageView.builder(
               controller: _pageController,
